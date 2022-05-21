@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4960609209274240672}
-  - component: {fileID: 6879369130796968730}
   - component: {fileID: 6854779799581143842}
   m_Layer: 0
   m_Name: PF_GameManager
@@ -32,19 +31,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6879369130796968730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8279342235285888350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9883e157ed344654b960aa2a97e111f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gameDuration: 60
 --- !u!114 &6854779799581143842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,3 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 375a6bb36d536e74b874f587901ff93b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _meteoChooser: {fileID: 0}
+  _score: 0
+  _gameDuration: 60
