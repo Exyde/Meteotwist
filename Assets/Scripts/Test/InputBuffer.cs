@@ -10,7 +10,7 @@ public class InputBuffer : MonoBehaviour
     [HideInInspector]
     public List<KeyCode> inputs;
 
-    public float timeBtwBuffer = .5f;
+    public float timeBtwBuffer = .1f;
     public float timeBuffer = 0;
 
 

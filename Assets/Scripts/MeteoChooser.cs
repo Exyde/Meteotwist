@@ -37,7 +37,6 @@ public class MeteoChooser : MonoBehaviour
 
     void CheckForCombo(){
         //List of all inputs : 
-        //Element 0 is Always none, don't know why.
         playerInput = _inputBuffer.inputs;
 
         //How many symbole we need here.
@@ -51,7 +50,8 @@ public class MeteoChooser : MonoBehaviour
             }
         }
         
-        if (currentComboRequiredSymbols == playerInput.Count - 1){
+        if (currentComboRequiredSymbols != playerInput.Count) return;
+        if (currentComboRequiredSymbols == playerInput.Count){
 
             //Compare both list
             foreach (KeyCode c in chainCombination){

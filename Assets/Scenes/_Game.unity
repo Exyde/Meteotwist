@@ -174,13 +174,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4139255422100403277, guid: aab2aa7113dc25a4ab37beb5678f22f4, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4139255422100403277, guid: aab2aa7113dc25a4ab37beb5678f22f4, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.8207547
+      objectReference: {fileID: 0}
+    - target: {fileID: 4139255422100403277, guid: aab2aa7113dc25a4ab37beb5678f22f4, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.8207547
+      objectReference: {fileID: 0}
+    - target: {fileID: 4139255422100403277, guid: aab2aa7113dc25a4ab37beb5678f22f4, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.8207547
+      objectReference: {fileID: 0}
     - target: {fileID: 4139255422100403279, guid: aab2aa7113dc25a4ab37beb5678f22f4, type: 3}
       propertyPath: m_Name
       value: PF_CameraMain
       objectReference: {fileID: 0}
     - target: {fileID: 6770687463396244960, guid: aab2aa7113dc25a4ab37beb5678f22f4, type: 3}
       propertyPath: m_RenderPostProcessing
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aab2aa7113dc25a4ab37beb5678f22f4, type: 3}
