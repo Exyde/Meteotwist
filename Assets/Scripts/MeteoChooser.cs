@@ -8,7 +8,7 @@ public class MeteoChooser : MonoBehaviour
     public List<KeyCode> chainCombination = new List<KeyCode>();
     public GameObject show;
     public int score = 0;
-    public int index;
+    public int index = 0;
     public Sprite interfaceObject;
 
     // Start is called before the first frame update
@@ -29,7 +29,7 @@ public class MeteoChooser : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(score);
+        //Debug.Log(score);
         if (allSymbole[index].transform.childCount == 2)
         {
             if (Input.GetKey(chainCombination[0]) && (Input.GetKey(chainCombination[1])))
@@ -46,6 +46,7 @@ public class MeteoChooser : MonoBehaviour
             if (Input.GetKey(chainCombination[0]) && (Input.GetKey(chainCombination[1])) && (Input.GetKey(chainCombination[2])))
             {
                 score = score + 1;
+                Debug.Log("marche");
                 chainCombination.Clear();
                 LoopGame();
             }
