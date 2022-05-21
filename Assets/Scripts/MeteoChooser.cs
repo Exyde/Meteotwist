@@ -12,8 +12,9 @@ public class MeteoChooser : MonoBehaviour
     public int score = 0;
     public int index = 0;
     
-    [Range (0, 28)]
-    public int randomDifficultySetting = 28;
+    [Range (1, 37)]
+    public int randomDifficultySetting = 1;
+    int MAX_SIZE = 37;
 
     //Inputs
     private InputBuffer _inputBuffer;
@@ -100,7 +101,7 @@ public class MeteoChooser : MonoBehaviour
     void LoopGame()
     {
         randomDifficultySetting = (int)gameManager._score / 10;
-        randomDifficultySetting = Mathf.Clamp(randomDifficultySetting, 0, 28);
+        randomDifficultySetting = Mathf.Clamp(randomDifficultySetting, 0, MAX_SIZE);
         index = Random.Range(0, randomDifficultySetting);
         //Random.Range(0, 11)
         for (int i = 0; i < allSymbole[index].transform.childCount; i++)
