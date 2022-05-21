@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour
 
 	[Header ("Player Data")]
 	public float _score;
+
+	[Header ("Timer Data")]
+	[Range (0, 180)]
 	public float _gameDuration = 60;
 
 	[Header ("Debug")]
@@ -100,7 +103,7 @@ public class GameManager : MonoBehaviour
 	public void ResetScore() => _score = 0;
 	#endregion
 
-	#region Meteo Chooser
+	#region Meteo Chooser Methods
 	void SetupMeteoChooser(){
 		_meteoChooser.gameObject.SetActive(true);
 	}

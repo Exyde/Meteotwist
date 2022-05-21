@@ -2,12 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
-
 public class InputBuffer : MonoBehaviour
 {
-
     //Element 0 is Always none, don't know why.
     [HideInInspector]
     public List<KeyCode> inputs;

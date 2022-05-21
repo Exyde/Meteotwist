@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MeteoChooser : MonoBehaviour
 {
+    public GameManager gameManager;
     public GameObject[] allSymbole;
     public List<KeyCode> chainCombination = new List<KeyCode>();
     public GameObject show;
@@ -25,13 +26,40 @@ public class MeteoChooser : MonoBehaviour
 
     void Update()
     {
+        CheckForCombo();
+        // BruteForceCheckForCombo();
+    }
+
+    void CheckForCombo(){
         //List of all inputs : 
         //Element 0 is Always none, don't know why.
         playerInput = _inputBuffer.inputs;
 
+        //How many symbole we need here.
+        int currentComboRequiredSymbols = allSymbole[index].transform.childCount;
 
+        if (currentComboRequiredSymbols == playerInput.Count - 1){
 
-        //Debug.Log(score);
+            //Compare both list
+            foreach (KeyCode c in chainCombination){
+                if (!playerInput.Contains(c)) return;
+                Debug.Log ("Character " + c + " is inputs");
+            }
+
+            //Gm AddScore
+            int scoreToAdd = currentComboRequiredSymbols * 10; 
+            gameManager.AddScore(scoreToAdd);
+
+            //Clear Chain
+            chainCombination.Clear();
+
+            //Loop Game
+            LoopGame();
+        }
+    }
+
+    void BruteForceCheckForCombo(){
+        // Debug.Log(score);
         if (allSymbole[index].transform.childCount == 2)
         {
             if (Input.GetKey(chainCombination[0]) && (Input.GetKey(chainCombination[1])))
@@ -54,9 +82,8 @@ public class MeteoChooser : MonoBehaviour
             }
         }
 
-        //Debug.Log(score);
+        Debug.Log(score);
     }
-
     void LoopGame()
     {
         index = Random.Range(0, 18);

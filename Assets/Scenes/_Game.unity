@@ -626,7 +626,7 @@ PrefabInstance:
       objectReference: {fileID: 1965006344}
     - target: {fileID: 6854779799581143842, guid: c4332b0a43e20ae4e9eb04690343060d, type: 3}
       propertyPath: _gameDuration
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6854779799581143842, guid: c4332b0a43e20ae4e9eb04690343060d, type: 3}
       propertyPath: _meteoChooser
@@ -654,6 +654,10 @@ PrefabInstance:
       propertyPath: show
       value: 
       objectReference: {fileID: 1315441734}
+    - target: {fileID: 8403278881359870896, guid: 9e7794ca838a3e6489e1945a9ec18eda, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1714176675}
     - target: {fileID: 8403278881359870897, guid: 9e7794ca838a3e6489e1945a9ec18eda, type: 3}
       propertyPath: m_RootOrder
       value: 7
