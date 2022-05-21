@@ -738,6 +738,10 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1714176675}
+    - target: {fileID: 8403278881359870896, guid: 9e7794ca838a3e6489e1945a9ec18eda, type: 3}
+      propertyPath: DebugTextCombo
+      value: 
+      objectReference: {fileID: 864022555}
     - target: {fileID: 8403278881359870897, guid: 9e7794ca838a3e6489e1945a9ec18eda, type: 3}
       propertyPath: m_RootOrder
       value: 7
