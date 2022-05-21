@@ -1,19 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
 	[Header ("Components")]
 	public MeteoChooser _meteoChooser;
 	private AudioSource _musicPlayer;
+	
+	[Header ("Canvas Ref")]
+	public GameObject _endGameCanvas;
+	public Text _textScore;
 
 	[Header ("Player Data")]
 	public float _score;
 	public float _gameDuration = 60;
-	float _currentGameTimer;
 
-
+	[Header ("Debug")]
+	public float _currentGameTimer;
+	public bool isPlaying = false;
 
 	#region Unity Callbacks
 
@@ -39,27 +45,39 @@ public class GameManager : MonoBehaviour
 	public void SetupGame(){
 		ResetTimer();
 		ResetScore();
-		_musicPlayer.Play();
+
+		//_musicPlayer.Play();
+		_endGameCanvas.SetActive(false);
+		isPlaying = true;
 	}
 
 	public void RestartGame(){
 		ResetTimer();
 		ResetScore();
+
+		_endGameCanvas.SetActive(false);
+		isPlaying = true;
 	}
 
 	public void EndGame(){
 		Debug.Log("Game Ended");
+		UpdateScoreText();
+		_endGameCanvas.SetActive(true);
+		isPlaying = false;
 	}
 
 	#endregion
 
 	#region Timer Methods
 	void UpdateGameTimer(){
-		_currentGameTimer -= Time.deltaTime;
 
-		if (_gameDuration <= 0){
-			_gameDuration = 0;
-			this.EndGame();
+		if (_currentGameTimer > 0){
+			_currentGameTimer -= Time.deltaTime;
+		}
+
+		if (_currentGameTimer <= 0 && isPlaying){
+			_currentGameTimer = 0;
+			EndGame();
 		}
 	}
 
@@ -67,7 +85,12 @@ public class GameManager : MonoBehaviour
 	#endregion
 
 	#region Score Methods
-	public void AddScore (int amout) => _score += amout;
+	public void AddScore (int amout){
+		_score += amout;
+		UpdateScoreText();
+	}
+
+	public void UpdateScoreText() => _textScore.text = "Score : " + _score;
 	public void ResetScore() => _score = 0;
 	#endregion
 }
