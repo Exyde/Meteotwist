@@ -46,30 +46,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
   allSymbole:
-  - {fileID: 2181207456224835137, guid: 9a5a9892e88c4d84ba7c6b997eefdf90, type: 3}
-  - {fileID: 8789221275544200330, guid: 7b499e844d298e7429e6b33c2d5a38d8, type: 3}
-  - {fileID: 839739280680548679, guid: 6c4344295d629f24e94305134354397b, type: 3}
-  - {fileID: 5372808760212501016, guid: 0663300a3de24fd4492d9702a5ead5cd, type: 3}
-  - {fileID: 4717144381837271973, guid: 94eb796ced89e4e4ebb3a3de3b8d2265, type: 3}
-  - {fileID: 7173668056907926311, guid: 510e5742b451a1b43b69f853d2d34a83, type: 3}
-  - {fileID: 4211629154911651750, guid: 24440bdb856adee4392bd1565dbd7f56, type: 3}
-  - {fileID: 448396612795706057, guid: 9c9fd09086d5bae47ac8afb274a87a86, type: 3}
-  - {fileID: 7870131500190878255, guid: afe7cce71a0e74c4bba64b4b7bef6016, type: 3}
-  - {fileID: 59622061047732578, guid: 9d3e2bc12c5c1154b8b1fc6ad943928f, type: 3}
-  - {fileID: 1032700014811098130, guid: 2d64afda74a4eca48b9b7aff79728a2a, type: 3}
-  - {fileID: 2935469277884222625, guid: e7acdb346b54ac847ab18d6b7fea61ae, type: 3}
-  - {fileID: 2793151385186624876, guid: b0fc23ed63f2f21468a9e20e91d0243a, type: 3}
-  - {fileID: 4511448564633206133, guid: 608c35ebfaf28b84592fa541de45e2bc, type: 3}
-  - {fileID: 1371628367407185388, guid: c53a820c732fc5c469fc5bf1e3bbeaea, type: 3}
-  - {fileID: 6657837777957032648, guid: b717d9e7f80cbed43a8a050fd1912fbe, type: 3}
-  - {fileID: 5533172032940852303, guid: a28738c138a76284a94d8bbc45156ed1, type: 3}
-  - {fileID: 8332652867268491154, guid: bb8734ffe2176544ba7854b8f17916ab, type: 3}
-  - {fileID: 4349966677912012510, guid: d031139dbd215f142a263cc4f9c807d8, type: 3}
+  - {fileID: 3811418447934436278, guid: 78b435732c165aa458e733ae5d0f8d58, type: 3}
+  - {fileID: 5452074561923869641, guid: 0b590d8430e6471448d7c3cc1e38e8a5, type: 3}
+  - {fileID: 418510459729403344, guid: f64a136e9d1684543a9cd1d9ea69e6ea, type: 3}
+  - {fileID: 4260878915981672300, guid: 9906b4f9008a77e47981e261b6e87854, type: 3}
+  - {fileID: 2441897496090257227, guid: 9b58facbc7097e4488235b0b45630125, type: 3}
+  - {fileID: 2490591807664546710, guid: f8f44638d487eb1449c883206cb659fc, type: 3}
+  - {fileID: 8441429672319483689, guid: 0d1c45ab584115440b0190ebac753426, type: 3}
+  - {fileID: 4060408712813226763, guid: 8ef71c6e03b125840931e3edb88ca6c2, type: 3}
+  - {fileID: 8754290022924000623, guid: fb0c0a3cc2e08104680b646ceb83dfe5, type: 3}
+  - {fileID: 2913237646189146245, guid: e0399d0757b711c449ec7392fc33d8bc, type: 3}
+  - {fileID: 2479635090810759891, guid: 5166a8e9c4f39db4c89045e0b6d42bbe, type: 3}
+  - {fileID: 7065413890427052775, guid: 775a6fb7898a7ec43b4c09eeb84fa0d7, type: 3}
+  - {fileID: 6354865431608886744, guid: 6dba7802f6925e94dad8fd952d662b68, type: 3}
+  - {fileID: 6985208529019711605, guid: fe9547a2462782447a37b1da7bcadd2d, type: 3}
+  - {fileID: 3104720644835283954, guid: a87be2d79c9867c499496f73d55fe9a7, type: 3}
+  - {fileID: 7055798928473575160, guid: 3c2d5920aa84f1f42ac038f2e3f37923, type: 3}
+  - {fileID: 430734125601247516, guid: d6fcaee03f1c0ba4ebcb06cf58962280, type: 3}
+  - {fileID: 9053123236155529033, guid: faf99ec39bf93134b9146098f6bc3cd9, type: 3}
+  - {fileID: 6328701303189138572, guid: 464a020bf53a65e4b8f9f7b67a7024ed, type: 3}
+  - {fileID: 4340322831141015576, guid: c3150490e0c223045b78134eed09e107, type: 3}
+  - {fileID: 293782572375163957, guid: 2e8cc1c7d6bab0d4cace845deb2c1968, type: 3}
+  - {fileID: 6148967847888048329, guid: 2fbafffc4da2a3e4293a5d53738534e3, type: 3}
+  - {fileID: 2990368946700819224, guid: d52265dbd375e2d44b7080a445274cf3, type: 3}
+  - {fileID: 8116220998919391196, guid: 1a1cb90253747fb4cb584815f6685a63, type: 3}
+  - {fileID: 2864636118222497696, guid: 53ecdb3b601de4241a343f9798cd3c4c, type: 3}
+  - {fileID: 446822102261681558, guid: 92292f267c7a9c441b3efe912acd0bc6, type: 3}
+  - {fileID: 2501138337217381727, guid: 4cc65311c78ae514280d98e9440fffed, type: 3}
+  - {fileID: 759495148757633575, guid: 3997b7b7d4f2ace49a8d91e146f70157, type: 3}
+  - {fileID: 3126936603219801728, guid: b918e8739c597dd4b9e08e64f587e20b, type: 3}
   chainCombination: 
   show: {fileID: 0}
   score: 0
   index: 0
   playerInput: 
+  DebugTextCombo: {fileID: 0}
 --- !u!114 &3530567935454460064
 MonoBehaviour:
   m_ObjectHideFlags: 0
