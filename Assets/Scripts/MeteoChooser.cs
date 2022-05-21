@@ -109,6 +109,6 @@ public class MeteoChooser : MonoBehaviour
 
         }
         
-        show.GetComponentInChildren<SpriteRenderer>().sprite = allSymbole[index].GetComponent<ElementsCompletData>().imageComplete;
+        show.GetComponent<SpriteRenderer>().sprite = allSymbole[index].GetComponent<ElementsCompletData>().imageComplete;
     }
 }
