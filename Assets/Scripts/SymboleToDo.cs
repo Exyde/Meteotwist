@@ -6,7 +6,8 @@ public class SymboleToDo
 {
     public Material[] symbole;
     public Material toShow;
-    public bool active;
+    public KeyCode[] input;
+    public int numberOfButtonToPress;
     // Start is called before the first frame update
     void Start()
     {

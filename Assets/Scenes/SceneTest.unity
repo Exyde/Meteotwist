@@ -155,43 +155,84 @@ MonoBehaviour:
   symboleToShow:
   - symbole: []
     toShow: {fileID: 2100000, guid: 8069adc857e6dd04cba52608cecab532, type: 2}
-    active: 0
+    input: 610000007a000000
+    numberOfButtonToPress: 2
   - symbole: []
     toShow: {fileID: 2100000, guid: 0498c434fb0cb3442a1c43b24fc9c89f, type: 2}
-    active: 0
+    input: 6500000072000000
+    numberOfButtonToPress: 3
   - symbole: []
     toShow: {fileID: 2100000, guid: 6b133714341b4084e93e8e4737e8390d, type: 2}
-    active: 0
+    input: 7400000061000000
+    numberOfButtonToPress: 2
   - symbole: []
     toShow: {fileID: 2100000, guid: 016cea7297f732042a4254d6303b9ab0, type: 2}
-    active: 0
+    input: 6100000079000000
+    numberOfButtonToPress: 2
   - symbole: []
     toShow: {fileID: 2100000, guid: 36b4b0ba5b2e66a469b16f9c8e472ade, type: 2}
-    active: 0
+    input: 650000007a000000
+    numberOfButtonToPress: 2
   - symbole: []
     toShow: {fileID: 2100000, guid: 645462261c8e0614d86fb14442e20f30, type: 2}
-    active: 0
+    input: 6500000075000000
+    numberOfButtonToPress: 2
   - symbole: []
     toShow: {fileID: 2100000, guid: 23457c4c187d0f747b80953e9eb9d6b0, type: 2}
-    active: 0
+    input: 740000007a000000
+    numberOfButtonToPress: 2
   - symbole: []
     toShow: {fileID: 2100000, guid: fba05fb62765722499fbbe1638516d79, type: 2}
-    active: 0
+    input: 6100000065000000
+    numberOfButtonToPress: 2
   - symbole: []
     toShow: {fileID: 2100000, guid: e73f408ffb0266841a5130288de388a2, type: 2}
-    active: 0
+    input: 6100000069000000
+    numberOfButtonToPress: 2
   - symbole: []
     toShow: {fileID: 2100000, guid: b056b309cbefbfe43a9c808e24dee72d, type: 2}
-    active: 0
+    input: 720000007a000000
+    numberOfButtonToPress: 2
   - symbole: []
     toShow: {fileID: 2100000, guid: 63072ae0eecf1b347b394a6fc339a05b, type: 2}
-    active: 0
+    input: 7400000072000000
+    numberOfButtonToPress: 2
   - symbole: []
     toShow: {fileID: 2100000, guid: 28288589a948f1544a1e34faee7fc0e2, type: 2}
-    active: 0
+    input: 6100000072000000
+    numberOfButtonToPress: 2
+  - symbole: []
+    toShow: {fileID: 2100000, guid: 28288589a948f1544a1e34faee7fc0e2, type: 2}
+    input: 6100000075000000
+    numberOfButtonToPress: 2
+  - symbole: []
+    toShow: {fileID: 2100000, guid: 28288589a948f1544a1e34faee7fc0e2, type: 2}
+    input: 61000000790000007a000000
+    numberOfButtonToPress: 3
+  - symbole: []
+    toShow: {fileID: 2100000, guid: 28288589a948f1544a1e34faee7fc0e2, type: 2}
+    input: 740000007a00000065000000
+    numberOfButtonToPress: 3
+  - symbole: []
+    toShow: {fileID: 2100000, guid: 28288589a948f1544a1e34faee7fc0e2, type: 2}
+    input: 610000007900000075000000
+    numberOfButtonToPress: 3
+  - symbole: []
+    toShow: {fileID: 2100000, guid: 28288589a948f1544a1e34faee7fc0e2, type: 2}
+    input: 7a0000007200000069000000
+    numberOfButtonToPress: 3
+  - symbole: []
+    toShow: {fileID: 2100000, guid: 28288589a948f1544a1e34faee7fc0e2, type: 2}
+    input: 740000006100000079000000
+    numberOfButtonToPress: 3
+  - symbole: []
+    toShow: {fileID: 2100000, guid: 28288589a948f1544a1e34faee7fc0e2, type: 2}
+    input: 650000007a00000075000000
+    numberOfButtonToPress: 3
   show: {fileID: 0}
   score: 0
   index: 0
+  cube: {fileID: 284176247}
 --- !u!4 &71521237
 Transform:
   m_ObjectHideFlags: 0

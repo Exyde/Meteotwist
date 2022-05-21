@@ -6,8 +6,9 @@ public class MeteoChooser : MonoBehaviour
 {
     public SymboleToDo[] symboleToShow;
     public Material show;
-    public int score;
+    public int score = 0;
     public int index;
+    public GameObject cube;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,24 +18,36 @@ public class MeteoChooser : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A) && (Input.GetKeyDown(KeyCode.Z) && (symboleToShow[0].active == true)))
+        Debug.Log(score);
+        if (symboleToShow[index].numberOfButtonToPress == 2)
         {
-            symboleToShow[0].active = false;
-            score = score++;
-            LoopGame();
+            if (Input.GetKey(symboleToShow[index].input[0]) && (Input.GetKey(symboleToShow[index].input[1])))
+            {
+                score = score ++;
+                
+                LoopGame();
+            }
         }
 
-        if (Input.GetKeyDown(KeyCode.E) && (Input.GetKeyDown(KeyCode.R) && symboleToShow[1].active == true))
+        if (symboleToShow[index].numberOfButtonToPress == 3)
         {
-            symboleToShow[1].active = false;
-            score = score++;
-            LoopGame();
+            if (Input.GetKey(symboleToShow[index].input[0]) && (Input.GetKey(symboleToShow[index].input[1])) && (Input.GetKey(symboleToShow[index].input[2])))
+            {
+                score = score ++;
+                LoopGame();
+            }
         }
+
+        //Debug.Log(score);
+
+
     }
 
     void LoopGame()
     {
-        index = Random.Range(0, 18);
+        index = 1;
+        //Random.Range(0, 11)
         show = symboleToShow[index].toShow;
+        cube.GetComponent<Renderer>().material = show;
     }
 }
