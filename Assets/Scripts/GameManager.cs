@@ -4,10 +4,21 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [Header ("Components")]
+    public MeteoChooser _meteoChooser;
+
+    [Header ("Player Data")]
+    public float _score;
     public float _gameDuration = 60;
     float _currentGameTimer;
 
     #region Unity Callbacks
+
+    private void Awake()
+    {
+        if (_meteoChooser == null) Debug.Log("No Meteo Chooser linked");
+
+    }
     void Start()
     {
         SetupGame();
@@ -26,7 +37,7 @@ public class GameManager : MonoBehaviour
     }
 
     public void RestartGame(){
-        _currentGameTimer = gameDuration;
+        _currentGameTimer = _gameDuration;
     }
 
     public void EndGame(){
@@ -38,8 +49,8 @@ public class GameManager : MonoBehaviour
     void UpdateGameTimer(){
         _currentGameTimer -= Time.deltaTime;
 
-        if (gameDuration <= 0){
-            gameDuration = 0;
+        if (_gameDuration <= 0){
+            _gameDuration = 0;
             this.EndGame();
         }
     } 
