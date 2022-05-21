@@ -10,24 +10,27 @@ public class MeteoChooser : MonoBehaviour
     public int score = 0;
     public int index = 0;
 
-    // Start is called before the first frame update
+    //Inputs
+    private InputBuffer _inputBuffer;
+    public List<KeyCode> playerInput;
+    
     private void Awake()
     {
-        
+        _inputBuffer = GetComponent<InputBuffer>();
     }
-
-
     void Start()
     {
-       
-
         LoopGame();
-
     }
 
-    // Update is called once per frame
     void Update()
     {
+        //List of all inputs : 
+        //Element 0 is Always none, don't know why.
+        playerInput = _inputBuffer.inputs;
+
+
+
         //Debug.Log(score);
         if (allSymbole[index].transform.childCount == 2)
         {
@@ -52,8 +55,6 @@ public class MeteoChooser : MonoBehaviour
         }
 
         //Debug.Log(score);
-
-
     }
 
     void LoopGame()
