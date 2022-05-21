@@ -4,36 +4,49 @@ using UnityEngine;
 
 public class MeteoChooser : MonoBehaviour
 {
-    public SymboleToDo[] symboleToShow;
-    public Material show;
+    public GameObject[] allSymbole;
+    public List<KeyCode> chainCombination = new List<KeyCode>();
+    public GameObject show;
     public int score = 0;
     public int index;
-    public GameObject cube;
+    public Sprite interfaceObject;
+
     // Start is called before the first frame update
+    private void Awake()
+    {
+        
+    }
+
+
     void Start()
     {
+       
+
         LoopGame();
+
     }
 
     // Update is called once per frame
     void Update()
     {
         Debug.Log(score);
-        if (symboleToShow[index].numberOfButtonToPress == 2)
+        if (allSymbole[index].transform.childCount == 2)
         {
-            if (Input.GetKey(symboleToShow[index].input[0]) && (Input.GetKey(symboleToShow[index].input[1])))
+            if (Input.GetKey(chainCombination[0]) && (Input.GetKey(chainCombination[1])))
             {
-                score = score ++;
-                
+                score = score + 1;
+                chainCombination.Clear();
                 LoopGame();
+                
             }
         }
 
-        if (symboleToShow[index].numberOfButtonToPress == 3)
+        if (allSymbole[index].transform.childCount == 3)
         {
-            if (Input.GetKey(symboleToShow[index].input[0]) && (Input.GetKey(symboleToShow[index].input[1])) && (Input.GetKey(symboleToShow[index].input[2])))
+            if (Input.GetKey(chainCombination[0]) && (Input.GetKey(chainCombination[1])) && (Input.GetKey(chainCombination[2])))
             {
-                score = score ++;
+                score = score + 1;
+                chainCombination.Clear();
                 LoopGame();
             }
         }
@@ -45,9 +58,14 @@ public class MeteoChooser : MonoBehaviour
 
     void LoopGame()
     {
-        index = 1;
+        index = Random.Range(0, 18);
         //Random.Range(0, 11)
-        show = symboleToShow[index].toShow;
-        cube.GetComponent<Renderer>().material = show;
+        for (int i = 0; i < allSymbole[index].transform.childCount; i++)
+        {
+            chainCombination.Add(allSymbole[index].transform.GetChild(i).GetComponent<ElementsData>().inputToPress);
+
+        }
+        
+        show.GetComponentInChildren<SpriteRenderer>().sprite = allSymbole[index].GetComponent<ElementsCompletData>().imageComplete;
     }
 }
