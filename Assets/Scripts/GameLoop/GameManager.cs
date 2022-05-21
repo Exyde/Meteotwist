@@ -71,6 +71,7 @@ public class GameManager : MonoBehaviour
 		Debug.Log("Game Ended");
 		DisableMeteoShooter();
 		UpdateScoreText();
+		
 		_endGameCanvas.SetActive(true);
 		isPlaying = false;
 	}

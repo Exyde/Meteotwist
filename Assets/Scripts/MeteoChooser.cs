@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MeteoChooser : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class MeteoChooser : MonoBehaviour
     //Inputs
     private InputBuffer _inputBuffer;
     public List<KeyCode> playerInput;
+    public Text DebugTextCombo;
     
     private void Awake()
     {
@@ -38,6 +40,14 @@ public class MeteoChooser : MonoBehaviour
         //How many symbole we need here.
         int currentComboRequiredSymbols = allSymbole[index].transform.childCount;
 
+        if (DebugTextCombo != null){
+            DebugTextCombo.text = "KEYS : ";
+
+            foreach (KeyCode c in chainCombination){
+                DebugTextCombo.text += c + " / ";
+            }
+        }
+        
         if (currentComboRequiredSymbols == playerInput.Count - 1){
 
             //Compare both list
