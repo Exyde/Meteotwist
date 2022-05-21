@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8403278881359870897
 Transform:
   m_ObjectHideFlags: 0
@@ -46,6 +46,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
   allSymbole:
+  - {fileID: 9122420520267280852, guid: f2b4bb954ebbe4c48b732a2ff6be3557, type: 3}
+  - {fileID: 3423647911631384142, guid: 4fcd3da874a018247ad584ef0250a6a1, type: 3}
+  - {fileID: 3289356038303316933, guid: 98beeb727b69fea468ea3c576668d81f, type: 3}
+  - {fileID: 4571882094972387080, guid: b8b0f7b8dbfe4e341b21196ef4b3b2e2, type: 3}
+  - {fileID: 2229012904214502273, guid: 32731118140d05f489c6579a30cd927c, type: 3}
+  - {fileID: 1985228365724192279, guid: 44889e93bccac0f4aaebe0c158a09989, type: 3}
+  - {fileID: 8701613875768116675, guid: 57bdc4685cff58c42bfeecde01510797, type: 3}
+  - {fileID: 2423182486989557561, guid: 7a8b2e9b671173e40991c049d1d1f05e, type: 3}
   - {fileID: 3811418447934436278, guid: 78b435732c165aa458e733ae5d0f8d58, type: 3}
   - {fileID: 5452074561923869641, guid: 0b590d8430e6471448d7c3cc1e38e8a5, type: 3}
   - {fileID: 418510459729403344, guid: f64a136e9d1684543a9cd1d9ea69e6ea, type: 3}
@@ -79,6 +87,7 @@ MonoBehaviour:
   show: {fileID: 0}
   score: 0
   index: 0
+  randomDifficultySetting: 28
   playerInput: 
   DebugTextCombo: {fileID: 0}
 --- !u!114 &3530567935454460064
