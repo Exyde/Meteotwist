@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class InputBuffer : MonoBehaviour
 {
-
     public List<KeyCode> inputs;
 
-
-
-    void Update()
+    private void OnGUI()
     {
-        if (Input.inputString){
-            Debug.Debug.Log((Input.inputString));
+        Event e = Event.current;
+
+        if (e == null) return;
+
+        if (e.isKey){            
+            if (e.type == EventType.KeyDown){
+                if (inputs.Contains(e.keyCode)) return;
+                inputs.Add(e.keyCode);
+            }
+
+            if (e.type == EventType.KeyUp){
+                if (inputs.Contains(e.keyCode)){
+                    inputs.Remove(e.keyCode);
+                }    
+            }
         }
     }
 }
