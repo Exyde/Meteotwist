@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class InputTestScript
 {
-    string ArduiData  ="";
+	string ArduiData  ="AAAAAAAAAAAAAAA";
 }
