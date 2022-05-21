@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8403278881359870897}
   - component: {fileID: 8403278881359870896}
   m_Layer: 0
-  m_Name: MeteoChooser
+  m_Name: PF_MeteoChooser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

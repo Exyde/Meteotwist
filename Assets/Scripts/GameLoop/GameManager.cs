@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
 	private void Awake()
 	{
 		if (_meteoChooser == null) Debug.Log("No Meteo Chooser linked");
+
 		_musicPlayer = GetComponent<AudioSource>();
 
 	}
@@ -43,17 +44,21 @@ public class GameManager : MonoBehaviour
 
 	#region Main Game Events
 	public void SetupGame(){
+		_endGameCanvas.SetActive(false);
+
 		ResetTimer();
 		ResetScore();
+		SetupMeteoChooser();
 
 		//_musicPlayer.Play();
-		_endGameCanvas.SetActive(false);
 		isPlaying = true;
+		
 	}
 
 	public void RestartGame(){
 		ResetTimer();
 		ResetScore();
+		SetupMeteoChooser();
 
 		_endGameCanvas.SetActive(false);
 		isPlaying = true;
@@ -61,6 +66,7 @@ public class GameManager : MonoBehaviour
 
 	public void EndGame(){
 		Debug.Log("Game Ended");
+		DisableMeteoShooter();
 		UpdateScoreText();
 		_endGameCanvas.SetActive(true);
 		isPlaying = false;
@@ -92,5 +98,15 @@ public class GameManager : MonoBehaviour
 
 	public void UpdateScoreText() => _textScore.text = "Score : " + _score;
 	public void ResetScore() => _score = 0;
+	#endregion
+
+	#region Meteo Chooser
+	void SetupMeteoChooser(){
+		_meteoChooser.gameObject.SetActive(true);
+	}
+
+	void DisableMeteoShooter(){
+		_meteoChooser.gameObject.SetActive(false);
+	}
 	#endregion
 }
