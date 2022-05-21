@@ -9,7 +9,6 @@ public class MeteoChooser : MonoBehaviour
     public GameObject show;
     public int score = 0;
     public int index = 0;
-    public Sprite interfaceObject;
 
     // Start is called before the first frame update
     private void Awake()
