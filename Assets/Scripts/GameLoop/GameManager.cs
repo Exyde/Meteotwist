@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 	[Header ("Canvas Ref")]
 	public GameObject _endGameCanvas;
 	public Text _textScore;
+	public Image _loadingBar;
 
 	[Header ("Player Data")]
 	public float _score;
@@ -80,6 +81,9 @@ public class GameManager : MonoBehaviour
 
 	#region Timer Methods
 	void UpdateGameTimer(){
+
+		float percent =  _currentGameTimer / _gameDuration;
+		_loadingBar.fillAmount = percent;
 
 		if (_currentGameTimer > 0){
 			_currentGameTimer -= Time.deltaTime;
