@@ -104,7 +104,7 @@ public class GameManager : MonoBehaviour
 		UpdateScoreText();
 	}
 
-	public void UpdateScoreText() => _textScore.text = "Score : " + _score;
+	public void UpdateScoreText() => _textScore.text = _score + "pts";
 	public void ResetScore() => _score = 0;
 	#endregion
 

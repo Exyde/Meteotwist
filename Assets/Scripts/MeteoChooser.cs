@@ -19,6 +19,9 @@ public class MeteoChooser : MonoBehaviour
     private InputBuffer _inputBuffer;
     public List<KeyCode> playerInput;
     public Text DebugTextCombo;
+
+    [Header ("Particles")]
+    public ParticleSystem _psSucces;
     
     private void Awake()
     {
@@ -62,6 +65,9 @@ public class MeteoChooser : MonoBehaviour
             //Gm AddScore
             int scoreToAdd = currentComboRequiredSymbols * 10; 
             gameManager.AddScore(scoreToAdd);
+
+            //PS 
+            _psSucces.Play();
 
             //Clear Chain
             chainCombination.Clear();
