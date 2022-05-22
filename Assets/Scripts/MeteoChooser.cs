@@ -12,7 +12,7 @@ public class MeteoChooser : MonoBehaviour
     public int score = 0;
     public int index = 0;
     
-    [Range (0, 28)]
+    [Range (1, 28)]
     public int randomDifficultySetting = 28;
 
     //Inputs
