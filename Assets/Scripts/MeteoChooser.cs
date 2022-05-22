@@ -56,7 +56,7 @@ public class MeteoChooser : MonoBehaviour
             //Compare both list
             foreach (KeyCode c in chainCombination){
                 if (!playerInput.Contains(c)) return;
-                Debug.Log ("Character " + c + " is inputs");
+                //Debug.Log ("Character " + c + " is inputs");
             }
 
             //Gm AddScore

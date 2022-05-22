@@ -11,9 +11,15 @@ public class EndGameLoader : MonoBehaviour
     public float _inputTimeBeforeLoadingMenu = 5f;
     private float timer;
 
+    //Time before player action.
+    public float actionDelayTimer = 2f;
+    bool canSkip = false;
+
     private void OnEnable()
     {
         timer = _inputTimeBeforeLoadingMenu;
+        canSkip = false;
+        actionDelayTimer = 2f;
     }
 
     private void OnDisable(){
@@ -21,6 +27,21 @@ public class EndGameLoader : MonoBehaviour
 
     private void Update(){
 
+
+        if (actionDelayTimer > 0 && !canSkip){
+            actionDelayTimer -= Time.deltaTime;
+        }
+
+        if (actionDelayTimer <= 0 && !canSkip){
+            actionDelayTimer = 0;
+            canSkip = true;
+        }
+
+        if (!canSkip) return;
+        HandleRestartOrLoad();
+    }
+
+    void HandleRestartOrLoad(){
         if (timer > 0){
             timer -= Time.deltaTime;
         }
