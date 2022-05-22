@@ -65,6 +65,7 @@ public class MeteoChooser : MonoBehaviour
 
             //Clear Chain
             chainCombination.Clear();
+            _inputBuffer.Clear();
 
             //Loop Game
             LoopGame();

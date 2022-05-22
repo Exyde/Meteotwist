@@ -48,6 +48,10 @@ public class InputBuffer : MonoBehaviour
         }
     }
 
+    public void Clear(){
+            inputs.Clear();
+    }
+
     // private void OnGUI()
     // {
     //     Event e = Event.current;
