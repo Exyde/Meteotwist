@@ -106,7 +106,7 @@ public class MeteoChooser : MonoBehaviour
     }
     void LoopGame()
     {
-        randomDifficultySetting = (int)gameManager._score / 10;
+        randomDifficultySetting = (int)gameManager._score / 7;
         randomDifficultySetting = Mathf.Clamp(randomDifficultySetting, 0, 28);
         index = Random.Range(0, randomDifficultySetting);
         
