@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e939b3abb492b084e873db1041a43cd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imageComplete: {fileID: 21300000, guid: 626db36bbde357c40ab1c77236294c51, type: 3}
+  imageComplete: {fileID: 21300000, guid: c83421462ceac9342ab163ea04d48fc4, type: 3}
   scoreForSuccess: 0
   chainCombination: 
 --- !u!1001 &723693163355561597
